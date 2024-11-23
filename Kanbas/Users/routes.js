@@ -67,7 +67,7 @@ export default function UserRoutes(app) {
         return;
       }
       userId = currentUser._id;
-    }x
+    }
     const courses = courseDao.findCoursesForEnrolledUser(userId);
     res.json(courses);
   };
